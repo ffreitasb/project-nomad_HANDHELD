@@ -12,7 +12,7 @@
 
 ---
 
-## 🚧 Status: in development - early stage
+## 🚧 Status: in development - early stage!!
 
 This is a **weekend project**, built in spare time with no fixed schedule. Features, scope, and even the name may change without notice. Don't use it in production, and definitely don't rely on it as your only digital survival plan (yet).
 
