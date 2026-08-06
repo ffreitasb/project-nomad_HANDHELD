@@ -12,7 +12,7 @@
 
 ---
 
-## 🚧 Status: em desenvolvimento
+## 🚧 Status: em desenvolvimento - estágio inicial!
 
 Este é um **projeto de fim de semana**, feito nas horas vagas e sem cronograma fixo. Features, escopo e até nome podem mudar sem aviso. Não use em produção nem confie nele como seu único plano de sobrevivência digital (ainda).
 
@@ -58,6 +58,7 @@ Detalhes completos de escopo e decisões técnicas estão no [PRD](./PRD-nomad-m
 - Kotlin + Jetpack Compose (Material 3)
 - Persistência local via DataStore
 - Curadoria de apps como dado (JSON estático embutido), não como código
+- e provavelmente um pouco de Python, pq não...
 
 ---
 
@@ -86,7 +87,7 @@ Pra deixar claro o que este projeto **não** tenta ser:
 
 ## Licença
 
-A definir.
+NOMAD:HANDHELD is licensed under the [Apache License 2.0](LICENSE).
 
 ---
 
