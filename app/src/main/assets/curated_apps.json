@@ -1,0 +1,147 @@
+[
+  {
+    "id": "kiwix",
+    "name": "Kiwix",
+    "category": "info-library",
+    "package_name": "org.kiwix.kiwixmobile",
+    "store_url": "https://f-droid.org/packages/org.kiwix.kiwixmobile/",
+    "description_short": "Leitor offline de Wikipedia, Gutenberg e guias médicos via arquivos ZIM.",
+    "onboarding_md": "onboarding/kiwix.md",
+    "recommended_content": [
+      "Wikipedia PT-BR (artigos principais) — ~2 GB",
+      "Wikipedia Medicina — ~1 GB",
+      "Gutenberg — Survival guides — ~200 MB"
+    ],
+    "priority": "critical"
+  },
+  {
+    "id": "mlc-chat",
+    "name": "MLC Chat",
+    "category": "local-ai",
+    "package_name": "ai.mlc.mlcchat",
+    "store_url": "https://play.google.com/store/apps/details?id=ai.mlc.mlcchat",
+    "description_short": "LLM rodando 100% no dispositivo. Baixe o modelo uma vez, use sem internet para sempre.",
+    "onboarding_md": "onboarding/mlc-chat.md",
+    "recommended_content": [
+      "Llama-3.1-8B-Instruct-q4f16_1 — ~4.3 GB (melhor custo-benefício)",
+      "Llama-3.2-3B-Instruct-q4f16_1 — ~1.9 GB (dispositivos com menos RAM)",
+      "Phi-3.5-mini-instruct-q4f16_1 — ~2.1 GB (rápido, bom para respostas curtas)"
+    ],
+    "priority": "critical"
+  },
+  {
+    "id": "pocketpal",
+    "name": "PocketPal AI",
+    "category": "local-ai",
+    "package_name": "com.pocketpalai",
+    "store_url": "https://play.google.com/store/apps/details?id=com.pocketpalai",
+    "description_short": "LLM local via llama.cpp, com interface mais amigável e suporte a modelos GGUF do HuggingFace.",
+    "onboarding_md": "onboarding/pocketpal.md",
+    "recommended_content": [
+      "Llama-3.2-3B-Instruct (GGUF Q4_K_M) — ~1.8 GB",
+      "Phi-3-mini-4k-instruct (GGUF Q4_K_M) — ~2.2 GB",
+      "Gemma-2-2b-it (GGUF Q4_K_M) — ~1.6 GB"
+    ],
+    "priority": "recommended"
+  },
+  {
+    "id": "osmand",
+    "name": "OsmAnd~",
+    "category": "offline-maps",
+    "package_name": "net.osmand",
+    "store_url": "https://f-droid.org/packages/net.osmand/",
+    "description_short": "Mapas offline completos via OpenStreetMap: navegação turn-by-turn, pontos de interesse, trilhas.",
+    "onboarding_md": "onboarding/osmand.md",
+    "recommended_content": [
+      "Brasil — Região Sudeste — ~450 MB",
+      "Brasil — Região Sul — ~250 MB",
+      "Mapa mundial (baixa resolução, referência) — ~700 MB"
+    ],
+    "priority": "critical"
+  },
+  {
+    "id": "organic-maps",
+    "name": "Organic Maps",
+    "category": "offline-maps",
+    "package_name": "app.organicmaps",
+    "store_url": "https://f-droid.org/packages/app.organicmaps/",
+    "description_short": "Alternativa leve ao OsmAnd: mais rápido, interface simples, excelente para trilhas e ciclismo.",
+    "onboarding_md": "onboarding/organic-maps.md",
+    "recommended_content": [
+      "Mapa do seu estado — tamanho varia por região (~100–500 MB)",
+      "Mapa de um estado vizinho — para viagens"
+    ],
+    "priority": "recommended"
+  },
+  {
+    "id": "khan-academy",
+    "name": "Khan Academy",
+    "category": "education",
+    "package_name": "org.khanacademy.android",
+    "store_url": "https://play.google.com/store/apps/details?id=org.khanacademy.android",
+    "description_short": "Vídeos e exercícios de matemática, ciências e mais — baixáveis para uso 100% offline.",
+    "onboarding_md": "onboarding/khan-academy.md",
+    "recommended_content": [
+      "Matemática Básica ao Ensino Médio",
+      "Biologia e Primeiros Socorros",
+      "Física e Química"
+    ],
+    "priority": "recommended"
+  },
+  {
+    "id": "moon-reader",
+    "name": "Moon+ Reader",
+    "category": "education",
+    "package_name": "com.flyersoft.moonreader",
+    "store_url": "https://play.google.com/store/apps/details?id=com.flyersoft.moonreader",
+    "description_short": "Leitor de e-books (EPUB, PDF, MOBI). Use com livros do Project Gutenberg ou seus próprios PDFs.",
+    "onboarding_md": "onboarding/moon-reader.md",
+    "recommended_content": [
+      "Where There Is No Doctor (PDF) — guia médico essencial",
+      "SAS Survival Handbook (PDF/EPUB)",
+      "The Merck Manual (edição popular, PDF)"
+    ],
+    "priority": "optional"
+  },
+  {
+    "id": "unit-converter",
+    "name": "Unit Converter Ultimate",
+    "category": "data-tools",
+    "package_name": "com.physphil.android.unitconverterultimate",
+    "store_url": "https://play.google.com/store/apps/details?id=com.physphil.android.unitconverterultimate",
+    "description_short": "Conversor de unidades completo e 100% offline: temperatura, peso, distância, frequência de rádio e mais.",
+    "onboarding_md": "onboarding/unit-converter.md",
+    "recommended_content": [],
+    "priority": "recommended"
+  },
+  {
+    "id": "keepassdx",
+    "name": "KeePassDX",
+    "category": "data-tools",
+    "package_name": "com.kunzisoft.keepass.free",
+    "store_url": "https://f-droid.org/packages/com.kunzisoft.keepass.free/",
+    "description_short": "Gerenciador de senhas offline com criptografia AES/ChaCha20. Seu cofre de senhas funciona sem internet.",
+    "onboarding_md": "onboarding/keepassdx.md",
+    "recommended_content": [
+      "Crie um banco de dados .kdbx e guarde credenciais essenciais antes de qualquer viagem",
+      "Anote: senhas de email, banking, VPN, Wi-Fi de locais importantes"
+    ],
+    "priority": "recommended"
+  },
+  {
+    "id": "termux",
+    "name": "Termux",
+    "category": "data-tools",
+    "package_name": "com.termux",
+    "store_url": "https://f-droid.org/packages/com.termux/",
+    "description_short": "Terminal Linux no Android. Com pacotes pré-baixados, vira uma caixa de ferramentas offline completa.",
+    "onboarding_md": "onboarding/termux.md",
+    "recommended_content": [
+      "python3, git, curl, wget — pacotes base",
+      "nmap — diagnóstico de rede local",
+      "openssh — acesso remoto e geração de chaves",
+      "vim ou nano — editor de texto"
+    ],
+    "priority": "critical"
+  }
+]

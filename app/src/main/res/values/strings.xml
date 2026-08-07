@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">NOMAD:HANDHELD</string>
+
+    <!-- Navigation labels -->
+    <string name="nav_home">Início</string>
+    <string name="nav_field_sheet">Ficha de Campo</string>
+    <string name="nav_settings">Configurações</string>
+
+    <!-- Status labels -->
+    <string name="status_not_installed">Não instalado</string>
+    <string name="status_installed">Instalado</string>
+    <string name="status_ready">Pronto</string>
+
+    <!-- Actions -->
+    <string name="action_download">Baixar</string>
+    <string name="action_open">Abrir</string>
+    <string name="action_mark_ready">Marcar como pronto</string>
+    <string name="action_reset_progress">Resetar progresso</string>
+
+    <!-- Progress -->
+    <string name="progress_label">Kit %d%% pronto</string>
+
+    <!-- Priority badges -->
+    <string name="priority_critical">Crítico</string>
+    <string name="priority_recommended">Recomendado</string>
+    <string name="priority_optional">Opcional</string>
+
+    <!-- About -->
+    <string name="about_inspired_by">Inspirado em Project N.O.M.A.D. (Crosstalk Solutions)</string>
+    <string name="about_license">Licença: Apache 2.0</string>
+</resources>

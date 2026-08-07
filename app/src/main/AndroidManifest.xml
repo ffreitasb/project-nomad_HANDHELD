@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- QUERY_ALL_PACKAGES would require Play Store approval.
+         We declare only the specific packages from the curated catalog (Fase 1). -->
+    <queries>
+        <!-- info-library -->
+        <package android:name="org.kiwix.kiwixmobile" />
+
+        <!-- local-ai -->
+        <package android:name="ai.mlc.mlcchat" />
+        <package android:name="com.pocketpalai" />
+
+        <!-- offline-maps -->
+        <package android:name="net.osmand" />
+        <package android:name="net.osmand.plus" />
+        <package android:name="app.organicmaps" />
+
+        <!-- education -->
+        <package android:name="org.khanacademy.android" />
+        <package android:name="com.flyersoft.moonreader" />
+
+        <!-- data-tools -->
+        <package android:name="com.physphil.android.unitconverterultimate" />
+        <package android:name="com.kunzisoft.keepass.free" />
+        <package android:name="com.termux" />
+    </queries>
+
+    <application
+        android:name=".NomadApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NomadHandheld">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

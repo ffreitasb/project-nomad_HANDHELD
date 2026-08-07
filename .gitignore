@@ -1,0 +1,24 @@
+# Agent files (not for version control)
+AGENTS.md
+CLAUDE.md
+local/
+implementation-plan.md
+
+# Android build outputs
+*.iml
+.gradle/
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# App build artifacts
+app/build/
+app/release/
+
+# Keystore files (never commit)
+*.jks
+*.keystore

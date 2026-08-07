@@ -4,7 +4,7 @@
 
 ![status](https://img.shields.io/badge/status-in%20development-yellow)
 ![platform](https://img.shields.io/badge/platform-Android-3DDC84)
-![license](https://img.shields.io/badge/license-TBD-lightgrey)
+![license](https://img.shields.io/badge/license-Apache%202.0-blue)
 ![weekend project](https://img.shields.io/badge/type-weekend%20project-blueviolet)
 ![made in brazil](https://img.shields.io/badge/made%20in-🇧🇷%20Brazil-009c3b)
 
@@ -12,9 +12,19 @@
 
 ---
 
-## 🚧 Status: in development - early stage!!
+## 🚧 Status: in development — phases 0, 1, 2 complete
 
-This is a **weekend project**, built in spare time with no fixed schedule. Features, scope, and even the name may change without notice. Don't use it in production, and definitely don't rely on it as your only digital survival plan (yet).
+This is a **weekend project**, built in spare time with no fixed schedule. The project structure, data layer, and business logic are complete. The UI is next.
+
+| Phase | Description | Status |
+|---|---|---|
+| 0 | Project scaffold (Gradle, Compose, theme) | ✅ Done |
+| 1 | Data model + curation (10 apps, onboarding guides) | ✅ Done |
+| 2 | Progress persistence (DataStore + PackageManager detection) | ✅ Done |
+| 3 | Home / Dashboard UI | 🔄 Next |
+| 4 | Card detail + onboarding rendering | ⏳ Pending |
+| 5 | Field Sheet mode | ⏳ Pending |
+| 6 | Settings + polish + APK | ⏳ Pending |
 
 ---
 
@@ -28,60 +38,83 @@ It's not an app that reimplements these tools. It's a **discovery and onboarding
 
 The project is inspired by [Project N.O.M.A.D.](https://github.com/Crosstalk-Solutions/project-nomad) (Crosstalk Solutions), a desktop/homelab offline-first server that orchestrates Kiwix, Ollama, Kolibri, and maps through Docker.
 
-**NOMAD:HANDHELD is not a fork.** No code from the original project is reused — NOMAD's container orchestration architecture doesn't apply to Android (no native Docker, no need for orchestration, since the equivalent tools already exist as standalone native apps). What carries over is the **product philosophy**: clear categorization, per-tool cards, embedded onboarding documentation. The name reflects that relationship — the "pocket edition" of the NOMAD universe.
-
-The original repository is licensed under Apache 2.0.
+**NOMAD:HANDHELD is not a fork.** No code from the original project is reused — NOMAD's container orchestration architecture doesn't apply to Android. What carries over is the **product philosophy**: clear categorization, per-tool cards, embedded onboarding documentation. The name reflects that relationship — the "pocket edition" of the NOMAD universe.
 
 ---
 
 ## Why it exists
 
-Offline-first tools for Android already exist as standalone apps (Kiwix, OsmAnd, MLC-Chat, PocketPal), but nothing centralizes the experience: discovering what to download, understanding what each app does, knowing what works without signal, and tracking whether your "kit" is complete. That's the gap this project tries to fill — with the minimum development necessary and the maximum curation quality possible.
+Offline-first tools for Android already exist as standalone apps (Kiwix, OsmAnd, MLC-Chat, PocketPal), but nothing centralizes the experience: discovering what to download, understanding what each app does, knowing what works without signal, and tracking whether your "kit" is complete. That's the gap this project fills.
+
+---
+
+## Curated catalog (v1)
+
+10 apps across 5 categories, with verified package names and bundled offline onboarding guides:
+
+| App | Category | Priority | Source |
+|---|---|---|---|
+| Kiwix | Information Library | 🔴 Critical | F-Droid |
+| MLC Chat | Local AI | 🔴 Critical | Play Store |
+| PocketPal AI | Local AI | 🟡 Recommended | Play Store |
+| OsmAnd~ | Offline Maps | 🔴 Critical | F-Droid (\*) |
+| Organic Maps | Offline Maps | 🟡 Recommended | F-Droid |
+| Khan Academy | Education | 🟡 Recommended | Play Store |
+| Moon+ Reader | Education | ⚪ Optional | Play Store |
+| Unit Converter Ultimate | Data Tools | 🟡 Recommended | Play Store |
+| KeePassDX | Data Tools | 🟡 Recommended | F-Droid |
+| Termux | Data Tools | 🔴 Critical | F-Droid (\*\*) |
+
+(\*) F-Droid version = unlimited map downloads. Play Store version limits to 7.  
+(\*\*) Termux on Play Store is discontinued. F-Droid is the only maintained version.
 
 ---
 
 ## Planned features (MVP)
 
-- [ ] Dashboard with categories: Information Library, Local AI, Offline Maps, Education, Data Tools
-- [ ] Per-app cards with status (not installed / installed / configured), deep links, and offline onboarding guide
-- [ ] Automatic detection of apps already installed on the device
-- [ ] Locally persisted progress checklist (no backend, no account)
-- [ ] "Field Sheet" mode — a summary view optimized for quick reading in low light / high-stress scenarios
+- [x] Project scaffold: Kotlin + Jetpack Compose + Material 3, dark theme
+- [x] App catalog as static JSON (`assets/curated_apps.json`) — schema-driven, no hardcoded logic
+- [x] Bundled offline onboarding guides (Markdown, PT-BR) for all 10 apps
+- [x] Automatic detection of installed apps via `PackageManager`
+- [x] Progress persistence via DataStore (no backend, no account)
+- [x] Progress calculation: overall % + critical apps readiness
+- [ ] Dashboard with categories, progress bar, and app cards
+- [ ] Per-app card detail with onboarding guide and status toggle
+- [ ] "Field Sheet" mode — compact emergency view for critical apps
+- [ ] Settings: reset progress, about/credits, app version
 - [ ] Zero network dependency once installed
 
-Full scope details and technical decisions live in the [PRD](./PRD-nomad-mobile-hub.md).
+Full scope details and technical decisions in the [PRD](./PRD-nomad-mobile-hub.md).
 
 ---
 
 ## Stack
 
-- Kotlin + Jetpack Compose (Material 3)
-- Local persistence via DataStore
-- App curation as data (embedded static JSON), not code
-- and probably a bit of Python, why not...
+- **Kotlin** + **Jetpack Compose** (Material 3, dark-only theme)
+- **DataStore Preferences** — local progress persistence
+- **kotlinx.serialization** — catalog JSON parsing
+- **PackageManager** — installed app detection
+- App curation as **data** (static JSON), not code
 
 ---
 
 ## Contributing
 
-**Contributions are very welcome.** This is especially true for:
+**Contributions are very welcome.** Especially:
 
-- 📋 **Curation** — suggestions of offline-first apps that should be in the catalog (the entry format is just JSON, see `PRD` section 6)
-- 🌍 **Coverage beyond Brazil** — recommendations for content/maps/apps relevant to other regions
-- 🐛 **Bugs and UX** — this project is built in very few hours, so real-world usage feedback is gold
-- 🧩 **Code** — PRs are welcome, but since this is a weekend project, review may take a while
-
-If you want to contribute, please open an issue before a large PR to align on scope — the goal is to keep the project lean (curation over development).
+- 📋 **Curation** — offline-first app suggestions (JSON entry format in PRD section 6)
+- 🌍 **Regional coverage** — apps/content relevant beyond Brazil
+- 🐛 **Bugs and UX** — real-world feedback is gold
+- 🧩 **Code** — PRs welcome; open an issue first for large changes
 
 ---
 
 ## Non-goals
 
-To be clear about what this project is **not** trying to be:
-
-- It doesn't reimplement offline Wikipedia, maps, or local LLMs — it uses the apps that already exist
-- It has no backend, user accounts, or cloud sync
-- It's not a fork or a replacement for Project NOMAD (desktop) — it's a companion for people without a homelab/dedicated hardware
+- Doesn't reimplement Wikipedia, maps, or local LLMs — uses existing apps
+- No backend, user accounts, or cloud sync
+- Not a fork or replacement for Project NOMAD (desktop)
+- No iOS in v1
 
 ---
 
