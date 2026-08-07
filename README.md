@@ -12,9 +12,9 @@
 
 ---
 
-## 🚧 Status: in development — phases 0, 1, 2, 3, 4, 5 complete
+## 🚧 Status: Project code complete (Phases 0-6)
 
-This is a **weekend project**, built in spare time with no fixed schedule. The project structure, data layer, business logic, Home UI, Card Detail UI, and Field Sheet mode are complete.
+This is a **weekend project**, built in spare time with no fixed schedule. The project structure, data layer, business logic, Home UI, Card Detail UI, Field Sheet mode, and Settings are fully complete.
 
 | Phase | Description | Status |
 |---|---|---|
@@ -24,7 +24,7 @@ This is a **weekend project**, built in spare time with no fixed schedule. The p
 | 3 | Home / Dashboard UI | ✅ Done |
 | 4 | Card detail + onboarding rendering | ✅ Done |
 | 5 | Field Sheet mode | ✅ Done |
-| 6 | Settings + polish + APK | 🔄 Next |
+| 6 | Settings + polish + APK | ✅ Done |
 
 ---
 
@@ -81,8 +81,8 @@ Offline-first tools for Android already exist as standalone apps (Kiwix, OsmAnd,
 - [x] Dashboard with categories, progress bar, and app cards
 - [x] Per-app card detail with onboarding guide and status toggle
 - [x] "Field Sheet" mode — compact emergency view for critical apps
-- [ ] Settings: reset progress, about/credits, app version
-- [ ] Zero network dependency once installed
+- [x] Settings: reset progress, about/credits, app version
+- [x] Zero network dependency once installed
 
 Full scope details and technical decisions in the [PRD](./PRD-nomad-mobile-hub.md).
 

@@ -12,9 +12,9 @@
 
 ---
 
-## 🚧 Status: em desenvolvimento — fases 0, 1, 2, 3, 4 e 5 concluídas
+## 🚧 Status: Código do projeto completo (Fases 0-6)
 
-Este é um **projeto de fim de semana**, feito nas horas vagas. A estrutura do projeto, a camada de dados, a lógica de negócio, a UI da Home, a UI de Detalhe de App e a UI do Ficha de Campo estão completas.
+Este é um **projeto de fim de semana**, feito nas horas vagas. A estrutura do projeto, a camada de dados, a lógica de negócio, a UI da Home, a UI de Detalhe de App, a UI do Ficha de Campo e as Configurações estão completas.
 
 | Fase | Descrição | Status |
 |---|---|---|
@@ -24,7 +24,7 @@ Este é um **projeto de fim de semana**, feito nas horas vagas. A estrutura do p
 | 3 | Home / Dashboard UI | ✅ Concluída |
 | 4 | Detalhe do card + renderização do onboarding | ✅ Concluída |
 | 5 | Modo Ficha de Campo | ✅ Concluída |
-| 6 | Configurações + polish + APK | 🔄 Próxima |
+| 6 | Configurações + polish + APK | ✅ Concluída |
 
 ---
 
@@ -81,8 +81,8 @@ Ferramentas offline-first pra Android já existem soltas (Kiwix, OsmAnd, MLC-Cha
 - [x] Dashboard com categorias, barra de progresso e cards de apps
 - [x] Detalhe do card com guia de onboarding e toggle de status
 - [x] Modo "Ficha de Campo" — resumo compacto para apps críticos
-- [ ] Configurações: reset de progresso, sobre/créditos, versão do app
-- [ ] Zero dependência de rede após instalado
+- [x] Configurações: reset de progresso, sobre/créditos, versão do app
+- [x] Zero dependência de rede após instalado
 
 Detalhes completos de escopo e decisões técnicas estão no [PRD](./PRD-nomad-mobile-hub.md).
 
