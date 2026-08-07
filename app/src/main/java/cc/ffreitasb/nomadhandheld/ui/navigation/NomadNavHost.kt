@@ -12,6 +12,7 @@ import cc.ffreitasb.nomadhandheld.ui.screens.CategoryScreen
 import cc.ffreitasb.nomadhandheld.ui.screens.FieldSheetScreen
 import cc.ffreitasb.nomadhandheld.ui.screens.HomeScreen
 import cc.ffreitasb.nomadhandheld.ui.screens.SettingsScreen
+import cc.ffreitasb.nomadhandheld.ui.viewmodel.CardDetailViewModel
 import cc.ffreitasb.nomadhandheld.ui.viewmodel.HomeViewModel
 
 @Composable
@@ -63,9 +64,9 @@ fun NomadNavHost(
                 navArgument(Screen.CardDetail.ARG_APP_ID) { type = NavType.StringType }
             )
         ) { backStackEntry ->
-            val appId = backStackEntry.arguments?.getString(Screen.CardDetail.ARG_APP_ID) ?: ""
+            val viewModel: CardDetailViewModel = androidx.lifecycle.viewmodel.compose.viewModel()
             CardDetailScreen(
-                appId = appId,
+                viewModel = viewModel,
                 onNavigateBack = { navController.popBackStack() }
             )
         }
