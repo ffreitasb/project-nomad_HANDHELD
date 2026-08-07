@@ -24,7 +24,7 @@ This is a **weekend project**, built in spare time with no fixed schedule. The p
 | 3 | Home / Dashboard UI | ✅ Done |
 | 4 | Card detail + onboarding rendering | ✅ Done |
 | 5 | Field Sheet mode | ✅ Done |
-| 6 | Settings + polish + APK | ✅ Done |
+| 6 | Settings + polish + APK | Reviewing |
 
 ---
 

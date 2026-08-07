@@ -24,7 +24,7 @@ Este é um **projeto de fim de semana**, feito nas horas vagas. A estrutura do p
 | 3 | Home / Dashboard UI | ✅ Concluída |
 | 4 | Detalhe do card + renderização do onboarding | ✅ Concluída |
 | 5 | Modo Ficha de Campo | ✅ Concluída |
-| 6 | Configurações + polish + APK | ✅ Concluída |
+| 6 | Configurações + polish + APK | Revisando |
 
 ---
 
