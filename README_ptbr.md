@@ -12,9 +12,9 @@
 
 ---
 
-## 🚧 Status: em desenvolvimento — fases 0, 1, 2, 3 e 4 concluídas
+## 🚧 Status: em desenvolvimento — fases 0, 1, 2, 3, 4 e 5 concluídas
 
-Este é um **projeto de fim de semana**, feito nas horas vagas. A estrutura do projeto, a camada de dados, a lógica de negócio, a UI da Home e a UI de Detalhe de App estão completas.
+Este é um **projeto de fim de semana**, feito nas horas vagas. A estrutura do projeto, a camada de dados, a lógica de negócio, a UI da Home, a UI de Detalhe de App e a UI do Ficha de Campo estão completas.
 
 | Fase | Descrição | Status |
 |---|---|---|
@@ -23,8 +23,8 @@ Este é um **projeto de fim de semana**, feito nas horas vagas. A estrutura do p
 | 2 | Persistência de progresso (DataStore + detecção via PackageManager) | ✅ Concluída |
 | 3 | Home / Dashboard UI | ✅ Concluída |
 | 4 | Detalhe do card + renderização do onboarding | ✅ Concluída |
-| 5 | Modo Ficha de Campo | 🔄 Próxima |
-| 6 | Configurações + polish + APK | ⏳ Pendente |
+| 5 | Modo Ficha de Campo | ✅ Concluída |
+| 6 | Configurações + polish + APK | 🔄 Próxima |
 
 ---
 
@@ -80,7 +80,7 @@ Ferramentas offline-first pra Android já existem soltas (Kiwix, OsmAnd, MLC-Cha
 - [x] Cálculo de progresso: % geral + contagem de apps críticos prontos
 - [x] Dashboard com categorias, barra de progresso e cards de apps
 - [x] Detalhe do card com guia de onboarding e toggle de status
-- [ ] Modo "Ficha de Campo" — resumo compacto para apps críticos
+- [x] Modo "Ficha de Campo" — resumo compacto para apps críticos
 - [ ] Configurações: reset de progresso, sobre/créditos, versão do app
 - [ ] Zero dependência de rede após instalado
 

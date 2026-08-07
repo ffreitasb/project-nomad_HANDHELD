@@ -12,9 +12,9 @@
 
 ---
 
-## 🚧 Status: in development — phases 0, 1, 2, 3, 4 complete
+## 🚧 Status: in development — phases 0, 1, 2, 3, 4, 5 complete
 
-This is a **weekend project**, built in spare time with no fixed schedule. The project structure, data layer, business logic, Home UI, and Card Detail UI are complete.
+This is a **weekend project**, built in spare time with no fixed schedule. The project structure, data layer, business logic, Home UI, Card Detail UI, and Field Sheet mode are complete.
 
 | Phase | Description | Status |
 |---|---|---|
@@ -23,8 +23,8 @@ This is a **weekend project**, built in spare time with no fixed schedule. The p
 | 2 | Progress persistence (DataStore + PackageManager detection) | ✅ Done |
 | 3 | Home / Dashboard UI | ✅ Done |
 | 4 | Card detail + onboarding rendering | ✅ Done |
-| 5 | Field Sheet mode | 🔄 Next |
-| 6 | Settings + polish + APK | ⏳ Pending |
+| 5 | Field Sheet mode | ✅ Done |
+| 6 | Settings + polish + APK | 🔄 Next |
 
 ---
 
@@ -80,7 +80,7 @@ Offline-first tools for Android already exist as standalone apps (Kiwix, OsmAnd,
 - [x] Progress calculation: overall % + critical apps readiness
 - [x] Dashboard with categories, progress bar, and app cards
 - [x] Per-app card detail with onboarding guide and status toggle
-- [ ] "Field Sheet" mode — compact emergency view for critical apps
+- [x] "Field Sheet" mode — compact emergency view for critical apps
 - [ ] Settings: reset progress, about/credits, app version
 - [ ] Zero network dependency once installed
 
