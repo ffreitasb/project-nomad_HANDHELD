@@ -12,17 +12,17 @@
 
 ---
 
-## 🚧 Status: em desenvolvimento — fases 0, 1 e 2 concluídas
+## 🚧 Status: em desenvolvimento — fases 0, 1, 2 e 3 concluídas
 
-Este é um **projeto de fim de semana**, feito nas horas vagas. A estrutura do projeto, a camada de dados e a lógica de negócio estão completas. A UI é a próxima etapa.
+Este é um **projeto de fim de semana**, feito nas horas vagas. A estrutura do projeto, a camada de dados, a lógica de negócio e a UI da Home estão completas.
 
 | Fase | Descrição | Status |
 |---|---|---|
 | 0 | Scaffold do projeto (Gradle, Compose, tema) | ✅ Concluída |
 | 1 | Modelo de dados + curadoria (10 apps, guias de onboarding) | ✅ Concluída |
 | 2 | Persistência de progresso (DataStore + detecção via PackageManager) | ✅ Concluída |
-| 3 | Home / Dashboard UI | 🔄 Próxima |
-| 4 | Detalhe do card + renderização do onboarding | ⏳ Pendente |
+| 3 | Home / Dashboard UI | ✅ Concluída |
+| 4 | Detalhe do card + renderização do onboarding | 🔄 Próxima |
 | 5 | Modo Ficha de Campo | ⏳ Pendente |
 | 6 | Configurações + polish + APK | ⏳ Pendente |
 
@@ -78,7 +78,7 @@ Ferramentas offline-first pra Android já existem soltas (Kiwix, OsmAnd, MLC-Cha
 - [x] Detecção automática de apps instalados via `PackageManager`
 - [x] Persistência de progresso via DataStore (sem backend, sem conta)
 - [x] Cálculo de progresso: % geral + contagem de apps críticos prontos
-- [ ] Dashboard com categorias, barra de progresso e cards de apps
+- [x] Dashboard com categorias, barra de progresso e cards de apps
 - [ ] Detalhe do card com guia de onboarding e toggle de status
 - [ ] Modo "Ficha de Campo" — resumo compacto para apps críticos
 - [ ] Configurações: reset de progresso, sobre/créditos, versão do app
