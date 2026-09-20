@@ -2,8 +2,8 @@
 
 > A mobile curation and onboarding hub for offline-first tools (survival / off-grid)
 
+![Android](https://img.shields.io/badge/Android-34A853?style=flat&logo=android&logoColor=white)
 ![status](https://img.shields.io/badge/status-in%20development-yellow)
-![platform](https://img.shields.io/badge/platform-Android-3DDC84)
 ![license](https://img.shields.io/badge/license-Apache%202.0-blue)
 ![weekend project](https://img.shields.io/badge/type-weekend%20project-blueviolet)
 ![made in brazil](https://img.shields.io/badge/made%20in-🇧🇷%20Brazil-009c3b)
